@@ -9,5 +9,5 @@ add_compile_options(-std=c17 -g)
 link_libraries(m)
 add_library(methods SHARED src/methods.c)
 
-add_executable(main ${SRC})
+add_executable(main src/main.c)
 target_link_libraries(main methods)
